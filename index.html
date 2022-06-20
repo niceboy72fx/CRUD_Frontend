@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <form action="">
+          <fieldset>
+            <legend class="bg-success text-light">
+              Đăng kí lại tài khoản User
+            </legend>
+            <div class="mb-3">
+              <label for="inputUser" class="form-label">User Name</label>
+              <input
+	        required
+                type="user"
+                class="form-control"
+                id="inputUser"
+                aria-describedby="emailHelp"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="inputUser" class="form-label">Full Name</label>
+              <input required type="fullname" class="form-control" id="inputName" />
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+	      required
+                type="email"
+                class="form-control"
+                id="inputEmail"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="inputDate" class="form-label">Birth Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="inputDate"
+                aria-describedby="emailHelp"
+		required
+              />
+            </div>
+
+            <button r type="submit" id="push" class="btn btn-primary bg-success">
+              Save
+            </button>
+            <button type="reset" class="btn btn-primary bg-warning">
+              Reset
+            </button>
+          </fieldset>
+        </form>
+      </div>
+
+      <br />
+
+      <div class="container">
+        <table class="table bg-success">
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">User Name</th>
+              <th scope="col">Full Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Birthday</th>
+            </tr>
+          </thead>
+          <tbody id="show_data">
+              
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
